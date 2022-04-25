@@ -204,7 +204,8 @@ war_declarer_needs_hook_on_liege = {
 				is_independent_ruler = no
 				NOT = { liege = scope:recipient }
 				liege = { has_realm_law_flag = vassal_all_wars_banned }
-				NOT = {
+				NAND = {
+					NOT = { liege = scope:recipient.liege }
 					vassal_contract_has_flag = vassal_contract_war_override
 				}
 			}
