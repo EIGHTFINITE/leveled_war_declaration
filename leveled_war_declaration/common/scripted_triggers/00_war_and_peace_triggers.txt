@@ -204,8 +204,7 @@ war_declarer_needs_hook_on_liege = {
 				is_independent_ruler = no
 				NOT = { liege = scope:recipient }
 				liege = { has_realm_law_flag = vassal_all_wars_banned }
-				NAND = {
-					NOT = { liege = scope:recipient.liege }
+				NOT = {
 					vassal_contract_has_flag = vassal_contract_war_override
 				}
 			}
@@ -730,6 +729,12 @@ neighboring_county_or_viking_conquest_trigger = {
 	}
 }
 
+valid_struggle_cb_target_trigger = {
+	any_neighboring_county = {
+		holder = { target_is_same_character_or_above = $CHARACTER$ }
+	}
+}
+
 prisoners_of_war_trigger = {
 	OR = {
 		scope:defender = {
@@ -762,6 +767,15 @@ prisoners_of_war_trigger = {
 	}
 }
 
+# Used for checking if a captured combatant is worth war-score.
+character_is_potential_important_hostage = {
+	OR = {
+		this = scope:primary_siege_attacker
+		this = scope:primary_siege_defender
+		is_heir_of = scope:primary_siege_attacker
+		is_heir_of = scope:primary_siege_defender
+	}
+}
 
 religious_war_vassals_constraints = {
 	trigger_if = {
