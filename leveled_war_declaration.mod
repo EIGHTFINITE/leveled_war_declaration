@@ -5,5 +5,5 @@ tags={
 	"Balance"
 }
 name="Leveled War Declaration"
-supported_version="1.5.*"
+supported_version="1.6.*"
 path="mod/leveled_war_declaration"
