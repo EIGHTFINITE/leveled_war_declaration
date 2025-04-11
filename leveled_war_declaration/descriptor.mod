@@ -5,4 +5,4 @@ tags={
 	"Balance"
 }
 name="Leveled War Declaration"
-supported_version="1.6.*"
+supported_version="1.15.*"
