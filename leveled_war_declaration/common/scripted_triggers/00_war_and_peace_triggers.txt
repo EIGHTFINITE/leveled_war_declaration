@@ -218,7 +218,8 @@ war_declarer_needs_hook_on_liege = {
 					liege = { government_allows = administrative }
 				}
 				liege = { has_realm_law_flag = vassal_all_wars_banned }
-				NOT = {
+				NAND = {
+					NOT = { liege = scope:recipient.liege }
 					vassal_contract_has_flag = vassal_contract_war_override
 				}
 			}
