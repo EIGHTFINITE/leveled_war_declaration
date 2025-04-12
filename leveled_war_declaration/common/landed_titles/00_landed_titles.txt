@@ -8175,7 +8175,7 @@ e_byzantium = {
 
 				#capital = 491 # Polygyros
 
-				b_polygyros= {
+				b_polygyros = {
 					province = 491
 
 					color = { 165 30 170 }
@@ -9325,7 +9325,7 @@ e_byzantium = {
 
 					color = { 150 105 125 }
 				}
-				b_olovo= {
+				b_olovo = {
 					province = 3564
 
 					color = { 150 105 125 }
@@ -20981,7 +20981,7 @@ e_west_slavia = { # West Slavs: Polish, Polabian, Czech, etc.
 					color = { 147 40 2 }
 				}
 			}
-			c_tarnowska= {
+			c_tarnowska = {
 				color = { 167 60 22 }
 
 				b_tarnow = {
@@ -35496,7 +35496,7 @@ e_turan = {
 
 					color = { 7 199 100}
 				}
-				b_tahiriya= {
+				b_tahiriya = {
 					province = 4440
 
 					color = { 7 199 100 }
@@ -35609,7 +35609,7 @@ e_turan = {
 
 					color = { 88 202 103 }
 				}
-				b_sarykamysh= {
+				b_sarykamysh = {
 					province = 4524
 
 					color = { 88 202 103 }
@@ -35624,7 +35624,7 @@ e_turan = {
 
 					color = { 88 202 103 }
 				}
-				b_bala_iskem= {
+				b_bala_iskem = {
 					province = 4527
 
 					color = { 88 202 103 }
@@ -35643,7 +35643,7 @@ e_turan = {
 
 					color = { 85 192 90 }
 				}
-				b_cheleken= {
+				b_cheleken = {
 					province = 4415
 
 					color = { 85 192 90 }
@@ -38350,7 +38350,7 @@ e_persia = {
 	k_mesopotamia = {
 		color = { 55 135 90 } 
 
-		capital	= c_baghdad # Baghdad
+		capital = c_baghdad # Baghdad
 
 		d_samarra = {
 			color = { 60 130 95 }
@@ -38781,7 +38781,7 @@ e_persia = {
 	k_jazira = {
 		color = { 10 205 90 }
 
-		capital	= c_mosul # Mosul
+		capital = c_mosul # Mosul
 
 		d_diyarrabia = {
 			color = { 15 200 85 }
@@ -39842,7 +39842,7 @@ e_carpathia = {
 	k_hungary = {
 		color = { 250 120 90 }
 
-		capital	= c_visegrad
+		capital = c_visegrad
 
 		ai_primary_priority = {
 			if = {
@@ -43570,7 +43570,7 @@ e_france = {
 	k_burgundy = {
 		color = { 134 0 37 }
 
-		capital	= c_venaissin # Arles
+		capital = c_venaissin # Arles
 
 		ai_primary_priority = {
 			if = {
@@ -50680,7 +50680,7 @@ e_arabia = {
 	k_yemen = {
 		color = { 218 234 33 }
 
-		capital	= c_sanaa
+		capital = c_sanaa
 
 		ai_primary_priority = {
 			if = {
@@ -51067,7 +51067,7 @@ e_arabia = {
 	k_egypt = {
 		color = { 10 255 80 }
 
-		capital	= c_cairo
+		capital = c_cairo
 
 		ai_primary_priority = {
 			if = {
@@ -53240,7 +53240,7 @@ e_abyssinia = {
 					color = { 130 55 25 }
 				}
 			}
-			c_gezira= {
+			c_gezira = {
 				color = { 125 60 30 }
 
 				b_geteina = {
