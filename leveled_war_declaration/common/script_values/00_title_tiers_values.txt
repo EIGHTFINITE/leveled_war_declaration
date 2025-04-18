@@ -25,6 +25,19 @@ create_title_counties_percentage = {
 	scope:title = {
 		if = {
 			limit = {
+				tier = tier_duchy
+				root ?= {
+					highest_held_title_tier = tier_county
+					any_held_title = {
+						count <= 2
+						tier = tier_county
+					}
+				}
+			}
+			add = 999.99
+		}
+		else_if = {
+			limit = {
 				OR = {
 					tier = tier_duchy
 					tier = tier_kingdom
@@ -155,6 +168,19 @@ create_title_counties_percentage = {
 usurp_title_counties_percentage = {
 	scope:title = {
 		if = {
+			limit = {
+				tier = tier_duchy
+				root ?= {
+					highest_held_title_tier = tier_county
+					any_held_title = {
+						count <= 2
+						tier = tier_county
+					}
+				}
+			}
+			add = 999.99
+		}
+		else_if = {
 			limit = {
 				OR = {
 					tier = tier_duchy
