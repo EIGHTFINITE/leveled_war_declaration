@@ -28,9 +28,15 @@ create_title_counties_percentage = {
 				tier = tier_duchy
 				root ?= {
 					highest_held_title_tier = tier_county
-					any_held_title = {
-						count <= 2
-						tier = tier_county
+					OR = {
+						AND = {
+							exists = liege
+							liege = { has_realm_law_flag = vassal_all_wars_banned }
+						}
+						any_held_title = {
+							count <= 2
+							tier = tier_county
+						}
 					}
 				}
 			}
