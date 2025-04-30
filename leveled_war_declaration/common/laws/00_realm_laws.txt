@@ -449,6 +449,7 @@ tribal_authority = {
 			minority_opinion = -30
 			belligerent_opinion = 20
 		}
+		flag = vassal_internal_wars_banned
 		flag = max_authority_level
 		#Settling is disabled unless you have this law. Script is in the decisions, currently in 80_major_decisions.
 		#Reforming pagan religions (but not creating other faiths) is disabled unless you have this law. Script is in the reformation prereqs, currently in 00_rules.
@@ -1673,6 +1674,7 @@ nomadic_authority = {
 			vassal_limit_min = 5
 			vassal_limit_max = 15
 		}
+		flag = vassal_internal_wars_banned
 		flag = migration_to_empires
 		#Settling is disabled unless you have this law. Script is in the decisions, currently in 80_major_decisions.
 		#Reforming pagan religions (but not creating other faiths) is disabled unless you have this law. Script is in the reformation prereqs, currently in 00_rules.
@@ -1753,6 +1755,7 @@ nomadic_authority = {
 			vassal_limit_min = 985
 			vassal_limit_max = 970
 		}
+		flag = vassal_all_wars_banned
 		flag = max_authority_level
 		#Settling is disabled unless you have this law. Script is in the decisions, currently in 80_major_decisions.
 		#Reforming pagan religions (but not creating other faiths) is disabled unless you have this law. Script is in the reformation prereqs, currently in 00_rules.
