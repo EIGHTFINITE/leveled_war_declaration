@@ -7,20 +7,40 @@
 		}
 		can_pass = {
 			can_change_partition_succession_law_trigger = yes
-			trigger_if = {
-				limit = {
-					exists = primary_title
+			OR = {
+				trigger_if = {
+					limit = {
+						exists = primary_title
+					}
+					is_confederation_member = no
 				}
-				is_confederation_member = no
+				# Vassal Contract allows it
+				custom_description = {
+					text = succession_laws_must_not_be_forced_partition
+					AND = {
+						is_independent_ruler = no
+						vassal_contract_has_flag = locked_to_partition
+					}
+				}
 			}
 		}
 		can_have = {
 			can_have_confederate_partition_succession_law_trigger = yes
-			trigger_if = {
-				limit = {
-					exists = primary_title
+			OR = {
+				trigger_if = {
+					limit = {
+						exists = primary_title
+					}
+					is_confederation_member = no
 				}
-				is_confederation_member = no
+				# Vassal Contract allows it
+				custom_description = {
+					text = succession_laws_must_not_be_forced_partition
+					AND = {
+						is_independent_ruler = no
+						vassal_contract_has_flag = locked_to_partition
+					}
+				}
 			}
 		}
 		should_start_with = {
@@ -79,6 +99,14 @@
 						exists = primary_title
 					}
 					is_confederation_member = yes
+				}
+			}
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
 				}
 			}
 		}
@@ -156,6 +184,14 @@
 	high_partition_succession_law = {
 		can_keep = {
 			can_keep_high_partition_succession_law_trigger = yes
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
 		}
 		can_pass = {
 			can_change_partition_succession_law_trigger = yes
