@@ -32,7 +32,10 @@ create_title_counties_percentage = {
 					OR = {
 						AND = {
 							exists = liege
-							liege = { has_realm_law_flag = vassal_all_wars_banned }
+							OR = {
+								liege = { has_realm_law_flag = vassal_all_wars_banned }
+								liege = { has_realm_law_flag = vassal_all_wars_banned_permanent }
+							}
 						}
 						any_held_title = {
 							count <= 2
